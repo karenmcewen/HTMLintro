@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Web Page</title>
+	<meta charset="utf-8" />
+</head>  
+<body>
+	<!--to comment use ctrl-KC-->
+	<!--code goes in the body between the opening and closing tags-->
+    <!--------------------------------------
+        HEADERS-->
+	<h1>My First Webpage (h1)</h1> <!--this is the largest header-->
+	<h2>A new header line in a smaller font (h2)</h2>
+	<h3>This is header size (h3)</h3>
+	<h4>This is header (h4)</h4>
+	<h5> this is header (h5)</h5>
+	<h6>This is the smallest header, probably too small. (h6)</h6>
+
+    <!---------------------------------------------------
+        PARAGRAPHS-->
+    <p> Paragraphs have their own implicit formatting</p>
+    <p></p>
+	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+	ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+	laborum."</p>
+
+	<p></p>
+
+    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+    eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+    nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam 
+    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+    <!--------------------------------------------------
+        LINKS -->
+    <!--"a" tag is an anchor tage - given extra importance-->
+    <!--"href" is an attribute - a hypertext reference - this goes INSIDE a tag-->
+    <!--the entire <a href> to </a> is a single element-->
+    <a href="https://www.google.com/">Go to Google</a>
+    <p></p>
+  
+
+    <!--to open the link in a new tag, use target (blank goes to blank page)-->
+    <a href="https://www.google.com/" target="_blank">Go to Google in a new blank page</a>
+    <p></p>
+
+   
+    <!--attributes affect the element that they are a part of.  href and target are attributes-->
+    <p></p>
+    <br>
+
+    <!--------------------------------------------------
+        IMAGE
+        the image tag is self contained and does not have a closing tag
+        to resize the image, you would use CSS
+        HTML is strictly for structure-->
+
+    <p> Adding an image</p>
+    <img src="images/download.jpg" alt="cute puppy"/>
+    <img src="images/300px-Closed_Brain_Coral_copy.jpg" alt="brains"/>
+    <br>
+   
+
+    <!--------------------------------------------------
+        LISTS
+        <ol> is an ordered (numbered) list, 
+        <ul> is  bullet points
+        each list item has the <li>  tag-->
+
+    <ol>
+        <li>beagle</li>
+        <li>huskey</li>
+        <li>some other dog</li>
+    </ol>
+    <ul>
+        <li>octopus</li>
+        <li>snails</li>
+        <li>another something</li>
+    </ul>
+    <ol>
+        <li>
+            a list within a list
+            <ul>
+                <li>one point</li>
+
+                <li>another point</li>
+            </ul>
+        <li>
+            something
+        <li>
+            another something else
+        </li>
+    </ol>
+    <br>
+
+    <!-------------------------------------------
+        TABLES
+        Note: The <td> elements are the data containers of the table.
+        They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+            Use the HTML <table> element to define a table
+            Use the HTML <tr> element to define a table row
+            Use the HTML <td> element to define a table data
+            Use the HTML <th> element to define a table heading
+            Use the HTML <caption> element to define a table caption           
+        -->
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Favorite color</th>
+            <th>Pet</th>
+        </tr>
+        <tr>
+            <td>Karen</td>
+            <td>purple</td>
+            <td>cat</td>
+        </tr>
+        <tr>
+            <td>Elizabeth</td>
+            <td>pink</td>
+            <td>fish</td>
+        </tr>
+        <tr>
+            <td>Ian</td>
+            <td>green</td>
+            <td>great dane</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-------------------------------------
+        DIV
+        The <div> tag defines a division or a section in an HTML document.   
+        The <div> tag is used to group block-elements to format them with CSS.
+        This makes the text in the color blue ('style and color' are CSS)
+        -->
+    <div style="color:#0000FF">
+        <h3>Using the div tag with the style color blue - This is a heading</h3>
+        <p>This is a paragraph using the div tag style color blue.</p>
+    </div>
+    <br>
+    <!---------------------------------------------------
+        FORM
+        The HTML <form> element defines a form that is used to collect user input:
+        An HTML form contains form elements for input - 
+        like text fields, checkboxes, radio buttons, submit buttons, and more.
+        -->
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+    </form>
+    <br/>
+
+    <!--------------------------------------------------
+        INPUT - this will create input boxes
+        with the following input types 
+        "text" you can read the text in the input box
+        "password" you can see asterisks in the input box
+        "checkbox" are square
+        "radio" buttons are round
+        "submit" are square buttons to press where value=label for the button
+        -->
+    <h3> This is a text box.</h3>
+    <input type="text" /><br />
+    <h3> This is a password box that replaces the letters entered with dots></h3>
+    <input type="password" /><br /><br />
+    <input type="checkbox" /> Checkbox for Chocolate<br />
+    <input type="checkbox" /> Checkbox for Vanilla<br /><br />
+    <input type="radio" /> Radio button for Happy<br />
+    <input type="radio" /> Radio button for Sad<br /><br />
+    <input type="submit" value="Press to Submit" /><br />
+    <input type="submit" value="Next step &gt;&gt;" /><br /><br />
+    
+    <!--------------------------------------------------
+        BUTTON - this is a clickable button with the text label between the tags
+        Inside a <button> element you can put content, like text or images. 
+        This is the difference between this element and buttons created with the <input> element.
+    Tip: Always specify the type attribute for a <button> element. 
+        Different browsers use different default types for the <button> element.
+        attributes include "autofocus" - gets focus when page loads
+        "disabled" "name" "type" "value" and various ways to link to "form"s-->
+    <button type="button">This is a button - Click Me!</button><br /><br />
+
+    <!--------------------------------------------------
+        OPTION tag creates a drop-down list
+        They go insde a 'select' or 'datalst'-->
+    <select>
+        <option value="header">Drop-Down List</option>
+        <option value="octopus">octopus</option>
+        <option value="coral">coral</option>
+        <option value="seaweed">seaweed</option>
+        <option value="shark">shark</option>
+    </select>
+    <br />
+    <br />
+    <br />
+    
+    <!--------------------------------------------------
+        TEXTAREA tag defines a multi-line text input control. (insde a box)
+        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font 
+    (usually Courier).
+        The size of a text area can be specified by the cols and rows attributes, 
+    or through CSS' height and width properties.-->
+    <textarea rows="4" cols="50">
+        This text is enclosed in a text area with four rows and 50 columns.
+    yadda yadda
+    more stuff here
+    and if the text is too long, you get a scroll bar!
+    </textarea>
+    <br /><br /><br /><br />
+
+</body>
+</html>
